@@ -1,0 +1,21 @@
+{
+  "@context":{
+    "base": "http://raw.githubusercontent.com/atilaromero/fileformats/master",
+    "fields": {"@id": "base:/fields",
+               "@container": "@list"},
+    "bytes":  {"@id": "base:/bytes"},
+    "fixedhex":  {"@id": "base:/fixedhex"},
+    "ref": {"@id": "base:/ref", "@type": "@id"}
+  },
+  "@id": "base:/partitiontable/mbr/partitionentry",
+  "fields":[
+    {"@id": "status", "bytes": 1},
+    {"@id": "CHSfirst", "bytes": 3},
+    {"@id": "type", "bytes": 1},
+    {"@id": "CHSlast", "bytes": 3},
+    {"@id": "LBAfirst", "bytes": 4},
+    {"@id": "sectors", "bytes": 4}
+  ]
+}
+{
+}

@@ -1,0 +1,19 @@
+{
+  "@context":{
+    "base": "http://raw.githubusercontent.com/atilaromero/fileformats/master",
+    "fields": {"@id": "base:/fields",
+               "@container": "@list"},
+    "bytes":  {"@id": "base:/bytes"},
+    "fixedhex":  {"@id": "base:/fixedhex"},
+    "ref": {"@id": "base:/ref", "@type": "@id"}
+  },
+  "@id": "base:/partitiontable/mbr/generic",
+  "fields":[
+    {"@id": "bootstrap", "bytes": 446},
+    {"@id": "partititon1", "ref": "base:/partitiontable/mbr/partitionentry"},
+    {"@id": "partititon2", "ref": "base:/partitiontable/mbr/partitionentry"},
+    {"@id": "partititon3", "ref": "base:/partitiontable/mbr/partitionentry"},
+    {"@id": "partititon4", "ref": "base:/partitiontable/mbr/partitionentry"},
+    {"@id": "bootsignature", "bytes": 4, "fixedhex": "0x55AA"},
+  ]
+}
