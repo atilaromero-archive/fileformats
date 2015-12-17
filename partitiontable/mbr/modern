@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "@base": ""
+  }
+  "fields": {
+    "bootstrap1": {"bytes": 218},
+    "0000": {"fixedhex": "0x0000"},
+    "originalphysicaldrive": {"bytes": 1},
+    "seconds": {"bytes": 1},
+    "minutes": {"bytes": 1},
+    "hours": {"bytes": 1},
+    "bootstrap2": {"bytes": 216},
+    "disksignature": {"bytes": 4},
+    "copyprotected": {"bytes": 2},
+    "partition1": {"bytes": 16},
+    "partition2": {"bytes": 16},
+    "partition3": {"bytes": 16},
+    "partition4": {"bytes": 16},
+    "bootsignature": {"fixedhex": "0x55AA"}  
+  },
+  "order": [ "bootstrap1",
+           "0000",
+           "originalphysicaldrive",
+           "seconds",
+           "minutes",
+           "hours",
+           "bootstrap2",
+           "disksignature",
+           "copyprotected",
+           "partition1",
+           "partition2",
+           "partition3",
+           "partition4",
+           "bootsignature"
+          ]
+}
